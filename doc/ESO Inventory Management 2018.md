@@ -68,6 +68,12 @@ Exclude Bag-to-bank
 	
 ## 4 Alexander Mundus: Crow and Countess
 
+### Pull from bank
+
+- [x] Laundered stuff
+	`(treasure)`
+	"trophy" is not the right option here, does not pick up laundered stuff, DOES pick up surveys, Psijic fragments.
+
 ### Misc Trash
 
 100x of each, sell extras. Even the hard-to-get Elemental Essence isn't _that_ hard to acquire.

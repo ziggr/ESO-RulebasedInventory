@@ -4,19 +4,29 @@ charVars =
     {
         ["@ziggr"] = 
         {
-            ["8796093027198257"] = 
+            ["8796093032933615"] = 
             {
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Zecorwyn",
                 ["userSettings"] = 
                 {
-                    ["Notify"] = 
+                    ["Destroy"] = 
                     {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
                         ["rulestring"] = "",
-                        ["delay"] = 0,
-                        ["timeout"] = 0,
                         ["output"] = true,
+                        ["thresholdcount"] = 5,
+                        ["safeRule"] = true,
+                        ["treshold"] = true,
                         ["summary"] = false,
+                    },
+                    ["Launder"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = true,
+                        ["output"] = true,
+                        ["safeRule"] = false,
                     },
                     ["UnJunk"] = 
                     {
@@ -27,183 +37,204 @@ charVars =
                     },
                     ["BagToBank"] = 
                     {
+                        ["timeout"] = 900,
+                        ["delay"] = 300,
                         ["rulestring"] = "(material)\nOR (intricate) \nOR (ornate)\nOR (recipe)\nOR (survey)\nOR ((soulgem) and (normal))\n",
                         ["excludeOtherRule"] = false,
-                        ["delay"] = 300,
-                        ["timeout"] = 300,
                         ["output"] = true,
                         ["summary"] = false,
                     },
-                    ["General"] = 
+                    ["Notify"] = 
                     {
-                        ["contextMenu"] = false,
-                        ["profile"] = "",
-                        ["output"] = true,
-                        ["printCompiledRule"] = false,
-                        ["useFCOIS"] = false,
-                        ["taskStartMessage"] = false,
-                        ["summary"] = true,
-                    },
-                    ["Destroy"] = 
-                    {
-                        ["rulestring"] = "",
-                        ["timeout"] = 100,
-                        ["safeRule"] = true,
-                        ["delay"] = 300,
-                        ["treshold"] = true,
-                        ["thresholdcount"] = 5,
-                        ["output"] = true,
-                        ["summary"] = false,
-                    },
-                    ["Sell"] = 
-                    {
-                        ["rulestring"] = "",
-                        ["safeRule"] = true,
-                        ["delay"] = 300,
-                        ["timeout"] = 100,
-                        ["output"] = true,
-                        ["summary"] = true,
-                    },
-                    ["Junk"] = 
-                    {
-                        ["rulestring"] = "",
-                        ["delay"] = 300,
                         ["timeout"] = 0,
-                        ["output"] = true,
-                        ["summary"] = false,
-                    },
-                    ["Launder"] = 
-                    {
+                        ["delay"] = 0,
                         ["rulestring"] = "",
-                        ["safeRule"] = false,
-                        ["delay"] = 300,
-                        ["timeout"] = 100,
-                        ["output"] = true,
-                        ["summary"] = true,
-                    },
-                    ["BankToBag"] = 
-                    {
-                        ["rulestring"] = "(masterwrit)",
-                        ["excludeOtherRule"] = false,
-                        ["delay"] = 300,
-                        ["timeout"] = 300,
                         ["output"] = true,
                         ["summary"] = false,
                     },
                     ["Deconstruct"] = 
                     {
-                        ["rulestring"] = "",
-                        ["safeRule"] = true,
-                        ["delay"] = 1500,
                         ["timeout"] = 500,
+                        ["delay"] = 1500,
+                        ["rulestring"] = "",
+                        ["summary"] = false,
+                        ["output"] = true,
+                        ["safeRule"] = true,
+                    },
+                    ["General"] = 
+                    {
+                        ["printCompiledRule"] = false,
+                        ["contextMenu"] = false,
+                        ["profile"] = "",
+                        ["useFCOIS"] = false,
+                        ["taskStartMessage"] = false,
+                        ["output"] = true,
+                        ["summary"] = true,
+                    },
+                    ["BankToBag"] = 
+                    {
+                        ["timeout"] = 900,
+                        ["delay"] = 300,
+                        ["rulestring"] = "((aspect) AND (NOT (legendary))) OR (essence) OR (potency)",
+                        ["excludeOtherRule"] = false,
                         ["output"] = true,
                         ["summary"] = false,
                     },
+                    ["Junk"] = 
+                    {
+                        ["timeout"] = 0,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["output"] = true,
+                        ["summary"] = false,
+                    },
+                    ["Sell"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = true,
+                        ["output"] = true,
+                        ["safeRule"] = true,
+                    },
                 },
+                ["version"] = 1,
+                ["$LastCharacterName"] = "Lilwen",
+            },
+            ["8796093036155895"] = 
+            {
+                ["userSettings"] = 
+                {
+                    ["Junk"] = 
+                    {
+                        ["timeout"] = 0,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["output"] = true,
+                        ["summary"] = false,
+                    },
+                    ["Deconstruct"] = 
+                    {
+                        ["timeout"] = 500,
+                        ["delay"] = 1500,
+                        ["rulestring"] = "",
+                        ["summary"] = false,
+                        ["output"] = true,
+                        ["safeRule"] = true,
+                    },
+                    ["UnJunk"] = 
+                    {
+                        ["timeout"] = 0,
+                        ["delay"] = 200,
+                        ["output"] = false,
+                        ["summary"] = false,
+                    },
+                    ["BagToBank"] = 
+                    {
+                        ["excludeOtherRule"] = false,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["timeout"] = 1000,
+                        ["output"] = true,
+                        ["summary"] = false,
+                    },
+                    ["Notify"] = 
+                    {
+                        ["timeout"] = 0,
+                        ["delay"] = 0,
+                        ["rulestring"] = "",
+                        ["output"] = true,
+                        ["summary"] = false,
+                    },
+                    ["Sell"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = true,
+                        ["output"] = true,
+                        ["safeRule"] = true,
+                    },
+                    ["General"] = 
+                    {
+                        ["useFCOIS"] = false,
+                        ["contextMenu"] = false,
+                        ["summary"] = true,
+                        ["printCompiledRule"] = false,
+                        ["taskStartMessage"] = false,
+                        ["output"] = true,
+                        ["profile"] = "",
+                    },
+                    ["BankToBag"] = 
+                    {
+                        ["excludeOtherRule"] = false,
+                        ["delay"] = 300,
+                        ["rulestring"] = "(treasure)",
+                        ["timeout"] = 1000,
+                        ["output"] = true,
+                        ["summary"] = false,
+                    },
+                    ["Destroy"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = false,
+                        ["thresholdcount"] = 5,
+                        ["output"] = true,
+                        ["treshold"] = true,
+                        ["safeRule"] = true,
+                    },
+                    ["Launder"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = true,
+                        ["output"] = true,
+                        ["safeRule"] = false,
+                    },
+                },
+                ["version"] = 1,
+                ["$LastCharacterName"] = "Alexander Mundus",
             },
             ["8796093022722147"] = 
             {
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Zhaksyr the Mighty",
                 ["userSettings"] = 
                 {
-                    ["Notify"] = 
-                    {
-                        ["rulestring"] = "",
-                        ["delay"] = 0,
-                        ["timeout"] = 0,
-                        ["output"] = true,
-                        ["summary"] = false,
-                    },
-                    ["UnJunk"] = 
+                    ["Junk"] = 
                     {
                         ["timeout"] = 0,
-                        ["delay"] = 200,
-                        ["output"] = false,
-                        ["summary"] = false,
-                    },
-                    ["BagToBank"] = 
-                    {
-                        ["rulestring"] = "(material)",
-                        ["excludeOtherRule"] = true,
                         ["delay"] = 300,
-                        ["timeout"] = 800,
+                        ["rulestring"] = "",
                         ["output"] = true,
                         ["summary"] = false,
                     },
                     ["Launder"] = 
                     {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
                         ["rulestring"] = "",
+                        ["summary"] = true,
+                        ["output"] = true,
                         ["safeRule"] = false,
-                        ["delay"] = 300,
-                        ["timeout"] = 100,
-                        ["output"] = true,
-                        ["summary"] = true,
                     },
-                    ["Junk"] = 
+                    ["UnJunk"] = 
                     {
-                        ["rulestring"] = "",
-                        ["delay"] = 300,
                         ["timeout"] = 0,
-                        ["output"] = true,
+                        ["delay"] = 200,
+                        ["output"] = false,
                         ["summary"] = false,
                     },
-                    ["Sell"] = 
+                    ["BagToBank"] = 
                     {
-                        ["rulestring"] = "",
-                        ["safeRule"] = true,
+                        ["excludeOtherRule"] = true,
                         ["delay"] = 300,
-                        ["timeout"] = 100,
-                        ["output"] = true,
-                        ["summary"] = true,
-                    },
-                    ["Destroy"] = 
-                    {
-                        ["rulestring"] = "",
-                        ["timeout"] = 100,
-                        ["safeRule"] = true,
-                        ["delay"] = 300,
-                        ["treshold"] = true,
-                        ["thresholdcount"] = 5,
-                        ["output"] = true,
-                        ["summary"] = false,
-                    },
-                    ["General"] = 
-                    {
-                        ["contextMenu"] = false,
-                        ["useFCOIS"] = false,
-                        ["output"] = true,
-                        ["printCompiledRule"] = false,
-                        ["profile"] = "",
-                        ["taskStartMessage"] = false,
-                        ["summary"] = true,
-                    },
-                    ["BankToBag"] = 
-                    {
-                        ["rulestring"] = "(material_booster)\nOR ((material) AND (itemname(\"rubedite\",\"ancestor\",\"rubedo\",\"ruby ash\")))\nOR ((aspect) AND (legendary))\nOR (ornate)\nOR ((item_jewelry) AND (intricate))",
-                        ["excludeOtherRule"] = false,
-                        ["delay"] = 300,
+                        ["rulestring"] = "(material)",
                         ["timeout"] = 800,
                         ["output"] = true,
                         ["summary"] = false,
                     },
-                    ["Deconstruct"] = 
-                    {
-                        ["rulestring"] = "",
-                        ["safeRule"] = true,
-                        ["delay"] = 1500,
-                        ["timeout"] = 500,
-                        ["output"] = true,
-                        ["summary"] = false,
-                    },
-                },
-            },
-            ["8796093032933615"] = 
-            {
-                ["version"] = 1,
-                ["$LastCharacterName"] = "Lilwen",
-                ["userSettings"] = 
-                {
                     ["Notify"] = 
                     {
                         ["timeout"] = 0,
@@ -212,51 +243,133 @@ charVars =
                         ["output"] = true,
                         ["summary"] = false,
                     },
+                    ["Deconstruct"] = 
+                    {
+                        ["timeout"] = 500,
+                        ["delay"] = 1500,
+                        ["rulestring"] = "",
+                        ["summary"] = false,
+                        ["output"] = true,
+                        ["safeRule"] = true,
+                    },
+                    ["General"] = 
+                    {
+                        ["useFCOIS"] = false,
+                        ["contextMenu"] = false,
+                        ["summary"] = true,
+                        ["printCompiledRule"] = false,
+                        ["taskStartMessage"] = false,
+                        ["output"] = true,
+                        ["profile"] = "",
+                    },
+                    ["BankToBag"] = 
+                    {
+                        ["excludeOtherRule"] = false,
+                        ["delay"] = 300,
+                        ["rulestring"] = "(material_booster)\nOR ((material) AND (itemname(\"rubedite\",\"ancestor\",\"rubedo\",\"ruby ash\")))\nOR ((aspect) AND (legendary))\nOR (ornate)\nOR ((item_jewelry) AND (intricate))",
+                        ["timeout"] = 800,
+                        ["output"] = true,
+                        ["summary"] = false,
+                    },
+                    ["Destroy"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = false,
+                        ["thresholdcount"] = 5,
+                        ["output"] = true,
+                        ["treshold"] = true,
+                        ["safeRule"] = true,
+                    },
+                    ["Sell"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = true,
+                        ["output"] = true,
+                        ["safeRule"] = true,
+                    },
+                },
+                ["version"] = 1,
+                ["$LastCharacterName"] = "Zhaksyr the Mighty",
+            },
+            ["8796093027198257"] = 
+            {
+                ["userSettings"] = 
+                {
+                    ["Destroy"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = false,
+                        ["thresholdcount"] = 5,
+                        ["output"] = true,
+                        ["treshold"] = true,
+                        ["safeRule"] = true,
+                    },
+                    ["Launder"] = 
+                    {
+                        ["timeout"] = 100,
+                        ["delay"] = 300,
+                        ["rulestring"] = "",
+                        ["summary"] = true,
+                        ["output"] = true,
+                        ["safeRule"] = false,
+                    },
                     ["UnJunk"] = 
                     {
                         ["timeout"] = 0,
-                        ["summary"] = false,
-                        ["output"] = false,
                         ["delay"] = 200,
+                        ["output"] = false,
+                        ["summary"] = false,
                     },
                     ["BagToBank"] = 
                     {
-                        ["timeout"] = 900,
                         ["excludeOtherRule"] = false,
                         ["delay"] = 300,
                         ["rulestring"] = "(material)\nOR (intricate) \nOR (ornate)\nOR (recipe)\nOR (survey)\nOR ((soulgem) and (normal))\n",
+                        ["timeout"] = 300,
                         ["output"] = true,
                         ["summary"] = false,
+                    },
+                    ["Notify"] = 
+                    {
+                        ["timeout"] = 0,
+                        ["delay"] = 0,
+                        ["rulestring"] = "",
+                        ["output"] = true,
+                        ["summary"] = false,
+                    },
+                    ["Deconstruct"] = 
+                    {
+                        ["timeout"] = 500,
+                        ["delay"] = 1500,
+                        ["rulestring"] = "",
+                        ["summary"] = false,
+                        ["output"] = true,
+                        ["safeRule"] = true,
                     },
                     ["General"] = 
                     {
+                        ["printCompiledRule"] = false,
                         ["contextMenu"] = false,
                         ["summary"] = true,
-                        ["output"] = true,
-                        ["printCompiledRule"] = false,
                         ["useFCOIS"] = false,
                         ["taskStartMessage"] = false,
+                        ["output"] = true,
                         ["profile"] = "",
                     },
-                    ["Destroy"] = 
+                    ["BankToBag"] = 
                     {
-                        ["rulestring"] = "",
+                        ["excludeOtherRule"] = false,
+                        ["delay"] = 300,
+                        ["rulestring"] = "(masterwrit)",
+                        ["timeout"] = 300,
+                        ["output"] = true,
                         ["summary"] = false,
-                        ["safeRule"] = true,
-                        ["delay"] = 300,
-                        ["timeout"] = 100,
-                        ["treshold"] = true,
-                        ["output"] = true,
-                        ["thresholdcount"] = 5,
-                    },
-                    ["Sell"] = 
-                    {
-                        ["timeout"] = 100,
-                        ["safeRule"] = true,
-                        ["delay"] = 300,
-                        ["rulestring"] = "",
-                        ["output"] = true,
-                        ["summary"] = true,
                     },
                     ["Junk"] = 
                     {
@@ -266,34 +379,18 @@ charVars =
                         ["output"] = true,
                         ["summary"] = false,
                     },
-                    ["Launder"] = 
+                    ["Sell"] = 
                     {
                         ["timeout"] = 100,
-                        ["safeRule"] = false,
                         ["delay"] = 300,
                         ["rulestring"] = "",
-                        ["output"] = true,
                         ["summary"] = true,
-                    },
-                    ["BankToBag"] = 
-                    {
-                        ["timeout"] = 900,
-                        ["excludeOtherRule"] = false,
-                        ["delay"] = 300,
-                        ["rulestring"] = "((aspect) AND (NOT (legendary))) OR (essence) OR (potency)",
                         ["output"] = true,
-                        ["summary"] = false,
-                    },
-                    ["Deconstruct"] = 
-                    {
-                        ["timeout"] = 500,
                         ["safeRule"] = true,
-                        ["delay"] = 1500,
-                        ["rulestring"] = "",
-                        ["output"] = true,
-                        ["summary"] = false,
                     },
                 },
+                ["version"] = 1,
+                ["$LastCharacterName"] = "Zecorwyn",
             },
         },
     },
@@ -306,110 +403,118 @@ globalVars =
         {
             ["$AccountWide"] = 
             {
-                ["version"] = 1,
                 ["profiles"] = 
                 {
-                    ["Zhaksyr"] = 
+                    ["Lilwen"] = 
                     {
-                        ["Notify"] = 
+                        ["Junk"] = 
                         {
-                            ["rulestring"] = "",
-                            ["delay"] = 0,
                             ["timeout"] = 0,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
                             ["output"] = true,
                             ["summary"] = false,
                         },
-                        ["UnJunk"] = 
+                        ["Deconstruct"] = 
                         {
-                            ["timeout"] = 0,
-                            ["delay"] = 200,
-                            ["output"] = false,
+                            ["timeout"] = 500,
+                            ["delay"] = 1500,
+                            ["rulestring"] = "",
                             ["summary"] = false,
+                            ["output"] = true,
+                            ["safeRule"] = true,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["summary"] = true,
+                            ["output"] = true,
+                            ["safeRule"] = true,
                         },
                         ["BagToBank"] = 
                         {
-                            ["rulestring"] = "",
                             ["excludeOtherRule"] = false,
                             ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["timeout"] = 1000,
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Notify"] = 
+                        {
+                            ["timeout"] = 0,
+                            ["delay"] = 0,
+                            ["rulestring"] = "",
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Destroy"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["summary"] = false,
+                            ["thresholdcount"] = 5,
+                            ["output"] = true,
+                            ["treshold"] = true,
+                            ["safeRule"] = true,
+                        },
+                        ["General"] = 
+                        {
+                            ["printCompiledRule"] = false,
+                            ["contextMenu"] = false,
+                            ["summary"] = true,
+                            ["useFCOIS"] = false,
+                            ["taskStartMessage"] = false,
+                            ["output"] = true,
+                            ["profile"] = "Lilwen",
+                        },
+                        ["BankToBag"] = 
+                        {
+                            ["excludeOtherRule"] = false,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
                             ["timeout"] = 1000,
                             ["output"] = true,
                             ["summary"] = false,
                         },
                         ["Launder"] = 
                         {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
                             ["rulestring"] = "",
+                            ["summary"] = true,
+                            ["output"] = true,
                             ["safeRule"] = false,
-                            ["delay"] = 300,
-                            ["timeout"] = 100,
-                            ["output"] = true,
-                            ["summary"] = true,
                         },
-                        ["Junk"] = 
+                        ["UnJunk"] = 
                         {
-                            ["rulestring"] = "",
-                            ["delay"] = 300,
                             ["timeout"] = 0,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
-                        ["Sell"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["safeRule"] = true,
-                            ["delay"] = 300,
-                            ["timeout"] = 100,
-                            ["output"] = true,
-                            ["summary"] = true,
-                        },
-                        ["Destroy"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["timeout"] = 100,
-                            ["safeRule"] = true,
-                            ["delay"] = 300,
-                            ["treshold"] = true,
-                            ["thresholdcount"] = 5,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
-                        ["General"] = 
-                        {
-                            ["contextMenu"] = false,
-                            ["useFCOIS"] = false,
-                            ["output"] = true,
-                            ["printCompiledRule"] = false,
-                            ["profile"] = "Zhaksyr",
-                            ["taskStartMessage"] = false,
-                            ["summary"] = true,
-                        },
-                        ["BankToBag"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["excludeOtherRule"] = false,
-                            ["delay"] = 300,
-                            ["timeout"] = 1000,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
-                        ["Deconstruct"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["safeRule"] = true,
-                            ["delay"] = 1500,
-                            ["timeout"] = 500,
-                            ["output"] = true,
+                            ["delay"] = 200,
+                            ["output"] = false,
                             ["summary"] = false,
                         },
                     },
                     ["Zecorwyn"] = 
                     {
-                        ["Notify"] = 
+                        ["Junk"] = 
                         {
-                            ["rulestring"] = "",
-                            ["delay"] = 0,
                             ["timeout"] = 0,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
                             ["output"] = true,
                             ["summary"] = false,
+                        },
+                        ["Launder"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["summary"] = true,
+                            ["output"] = true,
+                            ["safeRule"] = false,
                         },
                         ["UnJunk"] = 
                         {
@@ -420,133 +525,88 @@ globalVars =
                         },
                         ["BagToBank"] = 
                         {
-                            ["rulestring"] = "",
                             ["excludeOtherRule"] = false,
                             ["delay"] = 300,
+                            ["rulestring"] = "",
                             ["timeout"] = 1000,
                             ["output"] = true,
                             ["summary"] = false,
                         },
-                        ["General"] = 
+                        ["Notify"] = 
                         {
-                            ["contextMenu"] = false,
-                            ["useFCOIS"] = false,
-                            ["output"] = true,
-                            ["printCompiledRule"] = false,
-                            ["profile"] = "Zecorwyn",
-                            ["taskStartMessage"] = false,
-                            ["summary"] = true,
-                        },
-                        ["Launder"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["safeRule"] = false,
-                            ["delay"] = 300,
-                            ["timeout"] = 100,
-                            ["output"] = true,
-                            ["summary"] = true,
-                        },
-                        ["Sell"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["safeRule"] = true,
-                            ["delay"] = 300,
-                            ["timeout"] = 100,
-                            ["output"] = true,
-                            ["summary"] = true,
-                        },
-                        ["Junk"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["delay"] = 300,
                             ["timeout"] = 0,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
-                        ["Deconstruct"] = 
-                        {
+                            ["delay"] = 0,
                             ["rulestring"] = "",
-                            ["safeRule"] = true,
-                            ["delay"] = 1500,
-                            ["timeout"] = 500,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
-                        ["BankToBag"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["excludeOtherRule"] = false,
-                            ["delay"] = 300,
-                            ["timeout"] = 1000,
                             ["output"] = true,
                             ["summary"] = false,
                         },
                         ["Destroy"] = 
                         {
-                            ["rulestring"] = "",
                             ["timeout"] = 100,
-                            ["safeRule"] = true,
                             ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["summary"] = false,
                             ["thresholdcount"] = 5,
+                            ["output"] = true,
                             ["treshold"] = true,
+                            ["safeRule"] = true,
+                        },
+                        ["General"] = 
+                        {
+                            ["useFCOIS"] = false,
+                            ["contextMenu"] = false,
+                            ["summary"] = true,
+                            ["printCompiledRule"] = false,
+                            ["taskStartMessage"] = false,
+                            ["output"] = true,
+                            ["profile"] = "Zecorwyn",
+                        },
+                        ["BankToBag"] = 
+                        {
+                            ["excludeOtherRule"] = false,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["timeout"] = 1000,
                             ["output"] = true,
                             ["summary"] = false,
+                        },
+                        ["Deconstruct"] = 
+                        {
+                            ["timeout"] = 500,
+                            ["delay"] = 1500,
+                            ["rulestring"] = "",
+                            ["summary"] = false,
+                            ["output"] = true,
+                            ["safeRule"] = true,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["summary"] = true,
+                            ["output"] = true,
+                            ["safeRule"] = true,
                         },
                     },
-                    ["Lilwen"] = 
+                    ["Zhaksyr"] = 
                     {
-                        ["Notify"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["delay"] = 0,
-                            ["timeout"] = 0,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
                         ["Junk"] = 
                         {
-                            ["rulestring"] = "",
-                            ["delay"] = 300,
                             ["timeout"] = 0,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
-                        ["BagToBank"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["excludeOtherRule"] = false,
                             ["delay"] = 300,
-                            ["timeout"] = 1000,
+                            ["rulestring"] = "",
                             ["output"] = true,
                             ["summary"] = false,
                         },
-                        ["General"] = 
+                        ["Launder"] = 
                         {
-                            ["contextMenu"] = false,
-                            ["profile"] = "Lilwen",
-                            ["taskStartMessage"] = false,
-                            ["printCompiledRule"] = false,
-                            ["useFCOIS"] = false,
-                            ["output"] = true,
-                            ["summary"] = true,
-                        },
-                        ["Deconstruct"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["safeRule"] = true,
-                            ["delay"] = 1500,
-                            ["timeout"] = 500,
-                            ["output"] = true,
-                            ["summary"] = false,
-                        },
-                        ["Sell"] = 
-                        {
-                            ["rulestring"] = "",
-                            ["safeRule"] = true,
-                            ["delay"] = 300,
                             ["timeout"] = 100,
-                            ["output"] = true,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
                             ["summary"] = true,
+                            ["output"] = true,
+                            ["safeRule"] = false,
                         },
                         ["UnJunk"] = 
                         {
@@ -555,37 +615,166 @@ globalVars =
                             ["output"] = false,
                             ["summary"] = false,
                         },
-                        ["Launder"] = 
+                        ["BagToBank"] = 
                         {
-                            ["rulestring"] = "",
-                            ["safeRule"] = false,
+                            ["excludeOtherRule"] = false,
                             ["delay"] = 300,
-                            ["timeout"] = 100,
+                            ["rulestring"] = "",
+                            ["timeout"] = 1000,
                             ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Notify"] = 
+                        {
+                            ["timeout"] = 0,
+                            ["delay"] = 0,
+                            ["rulestring"] = "",
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Deconstruct"] = 
+                        {
+                            ["timeout"] = 500,
+                            ["delay"] = 1500,
+                            ["rulestring"] = "",
+                            ["summary"] = false,
+                            ["output"] = true,
+                            ["safeRule"] = true,
+                        },
+                        ["General"] = 
+                        {
+                            ["useFCOIS"] = false,
+                            ["contextMenu"] = false,
                             ["summary"] = true,
+                            ["printCompiledRule"] = false,
+                            ["taskStartMessage"] = false,
+                            ["output"] = true,
+                            ["profile"] = "Zhaksyr",
                         },
                         ["BankToBag"] = 
                         {
-                            ["rulestring"] = "",
                             ["excludeOtherRule"] = false,
                             ["delay"] = 300,
+                            ["rulestring"] = "",
                             ["timeout"] = 1000,
                             ["output"] = true,
                             ["summary"] = false,
                         },
                         ["Destroy"] = 
                         {
-                            ["rulestring"] = "",
-                            ["thresholdcount"] = 5,
-                            ["safeRule"] = true,
-                            ["delay"] = 300,
                             ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["summary"] = false,
+                            ["thresholdcount"] = 5,
+                            ["output"] = true,
+                            ["treshold"] = true,
+                            ["safeRule"] = true,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["summary"] = true,
+                            ["output"] = true,
+                            ["safeRule"] = true,
+                        },
+                    },
+                    ["Al"] = 
+                    {
+                        ["Junk"] = 
+                        {
+                            ["timeout"] = 0,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Deconstruct"] = 
+                        {
+                            ["timeout"] = 500,
+                            ["delay"] = 1500,
+                            ["rulestring"] = "",
+                            ["safeRule"] = true,
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Sell"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["safeRule"] = true,
+                            ["output"] = true,
+                            ["summary"] = true,
+                        },
+                        ["BagToBank"] = 
+                        {
+                            ["timeout"] = 1000,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["excludeOtherRule"] = false,
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Notify"] = 
+                        {
+                            ["timeout"] = 0,
+                            ["delay"] = 0,
+                            ["rulestring"] = "",
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Launder"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["safeRule"] = false,
+                            ["output"] = true,
+                            ["summary"] = true,
+                        },
+                        ["General"] = 
+                        {
+                            ["printCompiledRule"] = false,
+                            ["contextMenu"] = false,
+                            ["profile"] = "Al",
+                            ["useFCOIS"] = false,
+                            ["taskStartMessage"] = false,
+                            ["output"] = true,
+                            ["summary"] = true,
+                        },
+                        ["BankToBag"] = 
+                        {
+                            ["timeout"] = 1000,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["excludeOtherRule"] = false,
+                            ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["Destroy"] = 
+                        {
+                            ["timeout"] = 100,
+                            ["delay"] = 300,
+                            ["rulestring"] = "",
+                            ["safeRule"] = true,
+                            ["thresholdcount"] = 5,
                             ["treshold"] = true,
                             ["output"] = true,
+                            ["summary"] = false,
+                        },
+                        ["UnJunk"] = 
+                        {
+                            ["timeout"] = 0,
+                            ["delay"] = 200,
+                            ["output"] = false,
                             ["summary"] = false,
                         },
                     },
                 },
+                ["version"] = 1,
             },
         },
     },
