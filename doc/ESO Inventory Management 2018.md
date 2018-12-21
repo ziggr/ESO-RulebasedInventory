@@ -15,7 +15,7 @@ Need to reprogram account-wide BMR to move mats to bank (Zancalmo)
 - Intricate Jewelry
 - ornate (sell)
 
-## Pull from bank  rules
+### Pull from bank  rules
 
 - [x] CP150 mats
 	`((material) AND (itemname("rubedite","ancestor","rubedo","ruby ash")))
@@ -28,7 +28,16 @@ Need to reprogram account-wide BMR to move mats to bank (Zancalmo)
 - [ ] ornate UNTESTED
 	`(ornate)`
 
-## Push to Bank rules
+### Push to Bank rules, GENERIC
+
+```
+(material)
+OR (intricate)
+OR (ornate)
+OR (recipe)
+OR (survey)
+OR ((soulgem) AND (normal))
+```
 
 
 ## 2 Zecorwyn: Master Writs
@@ -39,8 +48,24 @@ Craft _or sell_ writs when this gets to 100+ master writs.
 
 - **Master Merchant + Net Worth ON** to track master writ inventory value
 
+### Pull from bank 
+
+- [ ] Master Writs UNTESTED   (TODO: ww mat 300gpv+)
+	`(masterwrit)`
+
 ## 3 Lilwen: Enchanting
 
+### Pull from bank
+Exclude Bag-to-bank
+
+- [x] Enchanting mats
+	`((aspect) AND (NOT (legendary))) OR (essence) OR (potency)`
+
+### Push to bank
+
+- [ ] Kuta UNTESTED
+	`((aspect) AND (legendary))`
+	
 ## 4 Alexander Mundus: Crow and Countess
 
 ### Misc Trash
