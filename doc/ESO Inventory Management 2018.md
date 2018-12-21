@@ -9,7 +9,7 @@ Need to reprogram account-wide BMR to move mats to bank (Zancalmo)
 ## 1 Zhaksyr: CP150 mats, Recipes and Sell Stuff
 
 - CP150 crafting materials
-	- BS CL WW CL raw and refined,
+	- BS CL WW CL JW raw and refined,
 	- tempers
 - Recipes
 - Intricate Jewelry
@@ -18,7 +18,7 @@ Need to reprogram account-wide BMR to move mats to bank (Zancalmo)
 ### Pull from bank  rules
 
 - [x] CP150 mats
-	`((material) AND (itemname("rubedite","ancestor","rubedo","ruby ash")))
+	`((material) AND (itemname("rubedite","ancestor","rubedo","ruby ash","platinum")))
 - [x] Tempers
 	`(material_booster)`
 - [x] Kuta
@@ -71,8 +71,10 @@ Exclude Bag-to-bank
 ### Pull from bank
 
 - [x] Laundered stuff
-	`(treasure)`
-	"trophy" is not the right option here, does not pick up laundered stuff, DOES pick up surveys, Psijic fragments.
+  `(treasure)`
+  "trophy" is not the right option here, does not pick up laundered stuff, DOES pick up surveys, Psijic fragments.
+- [x] supple root, foul hide, carapace, daedra husk, elemental essence, ectoplasm
+	`((junk) AND itemname("foul hide","supple root","carapace","elemental essence","daedra husk","ectoplasm"))`
 
 ### Misc Trash
 
@@ -99,11 +101,56 @@ Exclude Bag-to-bank
 - Travelers Boots
 - Shadowsilk Gem
 
+### Pull from bank
+
+- [x] fingerless gloves
+	`(costume) OR (disguise) OR ((armor) AND (armor_none))`
 
 ## 6 Hagnar: Provisioning
 
-## 7 Daenir
+### Pull from bank
 
-## 8 Zugbesha
+- [x] ingredients
+  `(ingredient)`
+- [x] recipe fragments
+  `(recipe_fragment)`
 
-## 9 Zacalmo
+## 7 Daenir: Alchemy
+
+### Pull from bank
+
+- [x] Provisioning
+	`(material_alchemy)`
+
+## 8 Zugbesha: trait and sub-CP150 mats
+
+Sell when we get to a stack of 200
+
+### Pull from bank
+
+- [x] sub-CP150 materials
+  ```
+     ((material_blacksmithing) AND (NOT(itemname("rubedite"))))
+  OR ((material_clothier)      AND (NOT(itemname("ancestor","rubedo"))))
+  OR ((material_woodworking)   AND (NOT(itemname("ruby"))))
+  OR ((material_jewelry)       AND (NOT(itemname("platinum"))))
+  ```
+
+- [x] trait
+	`(material_trait)`
+
+
+
+## 9 Zacalmo: motif stones, pages
+
+### Pull from bank
+
+- [x] motif stones
+	`(material_style)`
+- [x] motif pages
+	`(itemtype_racial_style_motif)`
+
+
+# Housing Bank
+
+- **Consumable Fireworks** Spiral Hat Dazzler, Cherry Blossom, Mud Ball, etc
