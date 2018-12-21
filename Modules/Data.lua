@@ -373,6 +373,9 @@ RbI.enrichRuleBasedata = {
 	,["mmsoldcount"] = "item.mmSoldCount"
 	,["mmcraftcost"] = "item.mmCraftCost"
 	
+	,["wwmatcost"] = "item.wwMatCost"
+	,["wwmatcostpervoucher"] = "item.wwMatCostPerVoucher"
+
 	,["ttcvaluemin"] = "item.ttcValueMin"
 	,["ttcoffercount"] = "item.ttcOfferCount"
 	,["ttcitemcount"] = "item.ttcItemCount"

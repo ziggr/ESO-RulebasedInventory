@@ -114,6 +114,17 @@ function RbI.GetItemData(bagId, slotIndex)
 		item.mmSoldCount = mmStats.numItems or -1
 		item.mmCraftCost = mmStats.craftCost or -1
 		
+		-- WritWorthy Integration (initialize values even if ttc not loaded)
+		item.wwMatCost = -1
+		item.wwMatCostPerVoucher = -1
+		if (WritWorthy ~= nil) then
+			if 0 < (item.vouchers or 0) then
+				local matCost = WritWorthy.ToMatCost(itemLink)
+				item.wwMatCost = matCost
+				item.wwMatCostPerVoucher = matCost / item.vouchers
+			end
+		end
+
 		-- Tamriel Trade Center Integration (initialize values even if ttc not loaded)
 		local ttcStats
 		if(TamrielTradeCentrePrice ~= nil) then
