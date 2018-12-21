@@ -17,10 +17,16 @@ Need to reprogram account-wide BMR to move mats to bank (Zancalmo)
 
 ## Pull from bank  rules
 
-- [ ] CP150 mats
-
+- [x] CP150 mats
+	`((material) AND (itemname("rubedite","ancestor","rubedo","ruby ash")))
 - [x] Tempers
 	`(material_booster)`
+- [x] Kuta
+	`((aspect) and (legendary))`
+- [ ] Intricate Jewelry UNTESTED
+	`((item_jewelry) AND (intricate))`
+- [ ] ornate UNTESTED
+	`(ornate)`
 
 ## Push to Bank rules
 
