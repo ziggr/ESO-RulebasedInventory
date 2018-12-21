@@ -1,0 +1,36 @@
+## Title: RulebasedInventory
+## APIVersion: 100023 100024 100025
+## Version: 0
+## Author: TaxTalis
+## Description: 
+##
+## This Add-on is not created by, affiliated with or sponsored by ZeniMax Media Inc. or its affiliates. 
+## The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. in the United States and/or other countries. 
+## All rights reserved
+##
+## You can read the full terms at https://account.elderscrollsonline.com/add-on-terms
+## SavedVariables: charVars globalVars
+
+## DependsOn: LibStub LibAsync LibAddonMenu-2.0 LibCustomMenu
+## OptionalDependsOn: FCOItemSaver MasterMerchant TamrielTradeCentre CraftStoreFixedAndImproved AutoCategory
+
+RulebasedInventory.lua
+
+Localization/en.lua
+Localization/$(language).lua
+
+Modules/Output.lua
+Modules/BagCache.lua
+Modules/DataRuleESOConstantdata.lua
+Modules/DataRuleExtendeddata.lua
+Modules/DataRuleESOConstantEnvironment.lua
+Modules/Data.lua
+Modules/Profiles.lua
+Modules/Rules.lua
+Modules/ActionQueue.lua
+Modules/ActionTask.lua
+Modules/ActionEvent.lua
+Modules/ActionExecution.lua
+Modules/Item.lua
+Modules/Menu.lua
+Modules/ContextMenu.lua
