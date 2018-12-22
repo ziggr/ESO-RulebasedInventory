@@ -14,3 +14,5 @@ get:
 getpts:
 	cp -f /Volumes/Elder\ Scrolls\ Online/pts/SavedVariables/RulebasedInventory.lua data/
 
+out:
+	lua zz_extract.lua > zz_extract.out
