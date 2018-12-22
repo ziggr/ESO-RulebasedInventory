@@ -1,5 +1,3 @@
--> bank.exclude: false (want true)	Simone Chevalier
--> bank.exclude: false (want true)	Alexander Mundus
 char   : Alexander Mundus
 to_bank: (material)
          OR (intricate) 
