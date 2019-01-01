@@ -120,8 +120,10 @@ function RbI.GetItemData(bagId, slotIndex)
 		if (WritWorthy ~= nil) then
 			if 0 < (item.vouchers or 0) then
 				local matCost = WritWorthy.ToMatCost(itemLink)
-				item.wwMatCost = matCost
-				item.wwMatCostPerVoucher = matCost / item.vouchers
+				if matCost then
+					item.wwMatCost = matCost
+					item.wwMatCostPerVoucher = matCost / item.vouchers
+				end
 			end
 		end
 
